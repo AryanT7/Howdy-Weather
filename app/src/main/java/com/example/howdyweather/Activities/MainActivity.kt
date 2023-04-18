@@ -55,9 +55,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val button = findViewById<AppCompatButton>(R.id.nvgtion)
-        button.setOnClickListener {View.OnClickListener { startActivity(Intent(this,WeatherAnimation::class.java)) }
+        val appCompatButton = findViewById<AppCompatButton>(R.id.nvgtion)
+
+        appCompatButton.setOnClickListener {
+            // Create an Intent to navigate to the second activity
+            val intent = Intent(this, ARScreen::class.java)
+            startActivity(intent)
         }
+
 
 //        MobileAds.initialize(this){
 //

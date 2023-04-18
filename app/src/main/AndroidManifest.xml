@@ -18,12 +18,6 @@
             android:name=".Activities.ARScreen"
             android:exported="false" />
         <activity
-            android:name=".Activities.AR_Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Activities.WeatherAnimation"
-            android:exported="false" />
-        <activity
             android:name=".Activities.SplashScreen2"
             android:exported="false" />
         <activity
