@@ -549,7 +549,10 @@
             android:padding="5dp"
             android:layout_marginBottom="10dp"
             android:textColor="@color/white"
-            android:text="View Weather Effects"/>
+            android:text="View Weather Effects"
+            android:onClick="openAnotherActivity"/>
+
+
 
 <!--        <com.google.android.gms.ads.AdView-->
 <!--            android:id="@+id/banner_ads"-->

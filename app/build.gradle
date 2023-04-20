@@ -57,4 +57,7 @@ dependencies {
     implementation 'com.google.android.gms:play-services-ads:21.4.0'
     implementation 'com.github.MatteoBattilana:WeatherView:3.0.0'
 
+    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.15.0'
+    implementation 'com.google.ar.sceneform:core:1.15.0'
+    implementation 'com.google.ar.sceneform:assets:1.15.0'
 }

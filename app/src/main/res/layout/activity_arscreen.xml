@@ -14,10 +14,15 @@
         android:background="@drawable/rain">
 
         <!-- Button in first section -->
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/rainy_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rainy AR" />
+            android:textAllCaps="false"
+            android:background="@drawable/round_button2"
+            android:textColor="@color/white"
+            android:onClick="openRainyAR"
+            android:text="Rainy AR"/>
 
     </LinearLayout>
 
@@ -31,9 +36,14 @@
         android:background="@drawable/cloudy">
 
         <!-- Button in second section -->
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cloudy_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:background="@drawable/round_button2"
+            android:textColor="@color/white"
+            android:onClick="openCloudyAR"
             android:text="Cloudy AR" />
 
     </LinearLayout>
@@ -48,9 +58,14 @@
         android:background="@drawable/snow">
 
         <!-- Button in third section -->
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/snowy_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:background="@drawable/round_button2"
+            android:textColor="@color/white"
+            android:onClick="openSnowyAR"
             android:text="Snowy AR" />
 
     </LinearLayout>

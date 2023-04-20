@@ -6,6 +6,8 @@
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.hardware.camera.ar" />
 
     <application
         android:allowBackup="true"
@@ -14,6 +16,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HowdyWeather">
+        <activity
+            android:name=".Activities.SnowyScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CloudyScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.RainyScreen"
+            android:exported="false" />
         <activity
             android:name=".Activities.ARScreen"
             android:exported="false" />
@@ -37,6 +48,9 @@
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-5775235373894956~6353527493" />
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="required" />
     </application>
 
 </manifest>

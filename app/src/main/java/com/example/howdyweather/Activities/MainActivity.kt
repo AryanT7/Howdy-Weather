@@ -13,6 +13,7 @@ import android.os.Bundle
 import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputMethodManager
+import android.widget.Button
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.widget.AppCompatButton
@@ -55,13 +56,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val appCompatButton = findViewById<AppCompatButton>(R.id.nvgtion)
 
-        appCompatButton.setOnClickListener {
-            // Create an Intent to navigate to the second activity
-            val intent = Intent(this, ARScreen::class.java)
-            startActivity(intent)
-        }
+//            nvgtion.setOnClickListener { View.OnClickListener { startActivity(Intent(this , ARScreen::class.java)) } }
+
+//        val button = findViewById<Button>(R.id.nvgtion)
+//
+//        button.setOnClickListener {
+//            // Create an Intent to navigate to the second activity
+//            val intent = Intent(this, ARScreen::class.java)
+//            startActivity(intent)
+//        }
 
 
 //        MobileAds.initialize(this){
@@ -389,6 +393,11 @@ class MainActivity : AppCompatActivity() {
         return intTemp.toBigDecimal().setScale(1,RoundingMode.UP).toDouble()
 
 
+    }
+
+    fun openAnotherActivity(view: android.view.View) {
+        val intent = Intent(this, ARScreen::class.java)
+        startActivity(intent)
     }
 
 }
